@@ -1,0 +1,65 @@
+
+.nav-container {
+
+    background-color: @block-club-purp; 
+    opacity: .95;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+
+nav {
+    .display-flex();
+    height: 50px;
+    margin-top: 20px;
+    padding: 20px;
+    align-items: flex-end;
+    
+
+            @media @phone{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            a {
+                text-decoration: none;
+                font-family: Oswald; 
+                font-size: 16px;
+                color: white; 
+            }  
+
+
+            .left-nav{
+                display: flex;
+                justify-content: flex-start;
+                padding-left: 40px;
+                width: 49%;
+                
+            }
+            
+                    h1 {
+                        color: white;
+                        text-align: center;
+                        font-family: Oswald;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 34px;
+                        line-height: 50px;
+                    }
+
+            .right-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end; 
+                padding: 10px;
+                width: 30%;
+
+                    button{
+                        .btn-style(50,50);
+                    }
+    
+
+            }
+             
+
+    }
