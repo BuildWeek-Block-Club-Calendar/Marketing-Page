@@ -1,17 +1,21 @@
 
 .main-container{
-    width: 90%;
-    margin: auto;
     font-family: Oswald; 
 
         img {
-            border-radius: 25px;
+            height: fit-content;
         }
+
+        @media @phone {
+            background: purple;
+        }
+
 }
 
 header {
     .display-flex();
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
     margin-top: 20px;
@@ -22,12 +26,14 @@ header {
                 justify-content: center;
                 text-align: center;
                 flex-direction: column;
-                width: 15%;
+                width: 30%;
                 padding: 30px;
 
                         h2 {
                             font-size: 50px;
                             margin-bottom: 30px;
+                            text-align: center;
+                            color: white;
                         }
 
                         .button {
@@ -44,109 +50,66 @@ header {
                     }
             
 
+}
 
-        }
 
-.feature-box-1 {
+
+
+.benefits-flex {
     .display-flex();
     justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px; 
-    padding-top: 75px;
-    padding-bottom: 75px;
+    width: 99%;
+    margin: auto;
     background-color: @block-club-purp;
-    opacity: 75%;
-    border-radius: 10px;
-
-            div{
-                .display-flex();
-                flex-direction: column;
-                justify-content: space-evenly;
-                text-align: justify;
-                width: 35%;
-                margin-right: 200px;
-                color: white; 
-                font-size: 20px;
-
-                    h2{
-                        text-align: center;
-                        margin-bottom: 30px;
-                    }
-
-            }
-
-            img { 
-                        
-                height: 400px;
-                width: 600px;
-                margin-left: 50px;
-                
-            }
-}
-
-.feature-box-2 {
-    .display-flex();
-    justify-content: space-around;
-
-                    div {
-                        .display-flex();
-                        flex-direction: column;
-                        justify-content: space-evenly;
-                        text-align: justify;
-                        width: 35%;
-                        margin-right: 200px;
-                        font-size: 20px;
-
-                                h2 {
-                                    text-align: center;
-                                    margin-bottom: 30px;
-                                }
-                    }
-
-                    img { 
-                        
-                        height: 400px;
-                        width: 600px;
-                        margin-left: 50px
-                    }
-
-}
-
-.testiominals {
-
-    margin-top: 100px;
-
-    h2 {
-        text-align: left;
-        font-size: 40px;
-        margin-bottom: 75px;
-        margin-top: 20px;
-        margin-left: 75px;
-        color: @block-club-purp;
-    }
-}
-
-.testimonials-flex {
-    .display-flex();
-    justify-content: space-between;
+    opacity: .95;
+    padding: 40px;
+    margin-top: 300px;
 
             div {
-
                 
                 margin-top: 20px;
                 width: 30%;
                 height: 500px;
+                padding: 20px;
 
+                    h3 {
+                        font-size: 20px;
+                        text-align: center;
+                        margin-bottom: 10px;
+                        color: white;
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
 
+                    p {
+
+                        font-size: 18px; 
+                        text-align: center;
+                        color: white;
+
+                    }
             }
 
                     img {
                         width: 100%;
                         height: 400px;
                         margin-bottom: 30px;
-                        border-radius: 25px;
-
                     }
+
+}
+
+
+#videoBG {
+    position: fixed;
+    z-index: -1;
+    width: 99%;
+  
+}
+
+footer {
+
+    margin: 20px;
+    font-family: Oswald;
+    text-align: center;
 
 }

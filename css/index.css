@@ -136,18 +136,22 @@ table {
   border-spacing: 0;
 }
 .main-container {
-  width: 90%;
-  margin: auto;
   font-family: Oswald;
 }
 .main-container img {
-  border-radius: 25px;
+  height: fit-content;
+}
+@media (max-width: 768px) {
+  .main-container {
+    background: purple;
+  }
 }
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   padding-top: 100px;
   padding-bottom: 100px;
   margin-top: 20px;
@@ -158,12 +162,14 @@ header .content-div {
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  width: 15%;
+  width: 30%;
   padding: 30px;
 }
 header .content-div h2 {
   font-size: 50px;
   margin-bottom: 30px;
+  text-align: center;
+  color: white;
 }
 header .content-div .button {
   display: flex;
@@ -187,107 +193,79 @@ header img {
   width: 600px;
   margin-left: 50px;
 }
-.feature-box-1 {
+.benefits-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  width: 99%;
+  margin: auto;
   background-color: #7C4979;
-  opacity: 75%;
-  border-radius: 10px;
+  opacity: 0.95;
+  padding: 40px;
+  margin-top: 300px;
 }
-.feature-box-1 div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: justify;
-  width: 35%;
-  margin-right: 200px;
-  color: white;
-  font-size: 20px;
-}
-.feature-box-1 div h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.feature-box-1 img {
-  height: 400px;
-  width: 600px;
-  margin-left: 50px;
-}
-.feature-box-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  justify-content: space-around;
-}
-.feature-box-2 div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: justify;
-  width: 35%;
-  margin-right: 200px;
-  font-size: 20px;
-}
-.feature-box-2 div h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.feature-box-2 img {
-  height: 400px;
-  width: 600px;
-  margin-left: 50px;
-}
-.testiominals {
-  margin-top: 100px;
-}
-.testiominals h2 {
-  text-align: left;
-  font-size: 40px;
-  margin-bottom: 75px;
-  margin-top: 20px;
-  margin-left: 75px;
-  color: #7C4979;
-}
-.testimonials-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.testimonials-flex div {
+.benefits-flex div {
   margin-top: 20px;
   width: 30%;
   height: 500px;
+  padding: 20px;
 }
-.testimonials-flex img {
+.benefits-flex div h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.benefits-flex div p {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+.benefits-flex img {
   width: 100%;
   height: 400px;
   margin-bottom: 30px;
-  border-radius: 25px;
+}
+#videoBG {
+  position: fixed;
+  z-index: -1;
+  width: 99%;
+}
+footer {
+  margin: 20px;
+  font-family: Oswald;
+  text-align: center;
+}
+.main-section {
+  background: #7C4979;
 }
 .headshot-flex-row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  margin: auto;
+  margin-top: 20px;
 }
 .headshot-flex-row div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
   height: 300px;
-  width: 300px;
-  margin-bottom: 15px;
-  text-align: center;
-  padding-bottom: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: white;
 }
 .headshot-flex-row div img {
-  width: 100%;
+  width: 80%;
+  height: 300px;
+  margin-bottom: 10px;
 }
 .about-us-header h1 {
   font-family: Oswald;
@@ -296,38 +274,28 @@ header img {
 .nav-container {
   background-color: #7C4979;
   opacity: 0.95;
-  width: 100%;
-  margin-top: 20px;
-  border-radius: 10px;
 }
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 50px;
-  margin-top: 20px;
   padding: 20px;
   align-items: flex-end;
 }
-@media (max-width: 500px) {
-  nav {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-}
-nav a {
+a {
   text-decoration: none;
   font-family: Oswald;
   font-size: 16px;
   color: white;
 }
-nav .left-nav {
+.left-nav {
   display: flex;
   justify-content: flex-start;
   padding-left: 40px;
   width: 49%;
 }
-nav h1 {
+#logo {
   color: white;
   text-align: center;
   font-family: Oswald;
@@ -336,14 +304,14 @@ nav h1 {
   font-size: 34px;
   line-height: 50px;
 }
-nav .right-nav {
+.right-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   width: 30%;
 }
-nav .right-nav .button {
+.right-nav .button {
   display: flex;
   justify-content: center;
   text-align: center;
