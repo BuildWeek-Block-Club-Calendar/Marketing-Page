@@ -140,6 +140,9 @@ table {
   margin: auto;
   font-family: Oswald;
 }
+.main-container img {
+  border-radius: 25px;
+}
 header {
   display: flex;
   flex-direction: row;
@@ -162,13 +165,13 @@ header .content-div h2 {
   font-size: 50px;
   margin-bottom: 30px;
 }
-header .content-div button {
+header .content-div .button {
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
-  width: 50;
-  height: 50;
+  width: 10;
+  height: 10;
   background-color: white;
   color: #7C4979;
   font-family: Oswald;
@@ -176,6 +179,8 @@ header .content-div button {
   border-radius: 25px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 header img {
   height: 400px;
@@ -186,23 +191,30 @@ header img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  justify-content: space-around;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-top: 75px;
   padding-bottom: 75px;
   background-color: #7C4979;
   opacity: 75%;
+  border-radius: 10px;
 }
 .feature-box-1 div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-direction: column;
-  justify-content: end;
-  border: solid black 1px;
-  height: 300px;
-  width: 300px;
+  justify-content: space-evenly;
+  text-align: justify;
+  width: 35%;
+  margin-right: 200px;
+  color: white;
+  font-size: 20px;
+}
+.feature-box-1 div h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 .feature-box-1 img {
   height: 400px;
@@ -220,30 +232,47 @@ header img {
   flex-direction: row;
   justify-content: space-between;
   flex-direction: column;
-  justify-content: end;
-  border: solid black 1px;
-  height: 300px;
-  width: 300px;
+  justify-content: space-evenly;
+  text-align: justify;
+  width: 35%;
+  margin-right: 200px;
+  font-size: 20px;
+}
+.feature-box-2 div h2 {
+  text-align: center;
+  margin-bottom: 30px;
 }
 .feature-box-2 img {
   height: 400px;
   width: 600px;
   margin-left: 50px;
 }
-.testimonials {
+.testiominals {
+  margin-top: 100px;
+}
+.testiominals h2 {
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 75px;
+  margin-top: 20px;
+  margin-left: 75px;
+  color: #7C4979;
+}
+.testimonials-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.testimonials div {
-  border: solid black 1px;
+.testimonials-flex div {
   margin-top: 20px;
-  width: 20%;
+  width: 30%;
   height: 500px;
 }
-.testimonials img {
+.testimonials-flex img {
   width: 100%;
-  height: 100px;
+  height: 400px;
+  margin-bottom: 30px;
+  border-radius: 25px;
 }
 .headshot-flex-row {
   display: flex;
@@ -253,8 +282,6 @@ header img {
 .headshot-flex-row div {
   height: 300px;
   width: 300px;
-  background: grey;
-  border: solid black 1px;
   margin-bottom: 15px;
   text-align: center;
   padding-bottom: 20px;
@@ -271,6 +298,7 @@ header img {
   opacity: 0.95;
   width: 100%;
   margin-top: 20px;
+  border-radius: 10px;
 }
 nav {
   display: flex;

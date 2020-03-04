@@ -3,6 +3,10 @@
     width: 90%;
     margin: auto;
     font-family: Oswald; 
+
+        img {
+            border-radius: 25px;
+        }
 }
 
 header {
@@ -21,17 +25,17 @@ header {
                 width: 15%;
                 padding: 30px;
 
-                        h2{
+                        h2 {
                             font-size: 50px;
                             margin-bottom: 30px;
                         }
 
-                        button {
-
-                            .btn-style(50,50);
-
+                        .button {
+                            .btn-style(10, 10);
+                            padding-top: 10px;
+                            padding-bottom: 10px;
                         }
-            }
+                    }
 
                     img {
                         height: 400px;
@@ -45,21 +49,30 @@ header {
 
 .feature-box-1 {
     .display-flex();
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
     margin-bottom: 20px; 
     padding-top: 75px;
     padding-bottom: 75px;
     background-color: @block-club-purp;
     opacity: 75%;
+    border-radius: 10px;
 
             div{
                 .display-flex();
                 flex-direction: column;
-                justify-content: end;
-                border: solid black 1px; 
-                height: 300px;
-                width: 300px; 
+                justify-content: space-evenly;
+                text-align: justify;
+                width: 35%;
+                margin-right: 200px;
+                color: white; 
+                font-size: 20px;
+
+                    h2{
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
 
             }
 
@@ -67,7 +80,8 @@ header {
                         
                 height: 400px;
                 width: 600px;
-                margin-left: 50px
+                margin-left: 50px;
+                
             }
 }
 
@@ -78,10 +92,16 @@ header {
                     div {
                         .display-flex();
                         flex-direction: column;
-                        justify-content: end;
-                        border: solid black 1px; 
-                        height: 300px;
-                        width: 300px; 
+                        justify-content: space-evenly;
+                        text-align: justify;
+                        width: 35%;
+                        margin-right: 200px;
+                        font-size: 20px;
+
+                                h2 {
+                                    text-align: center;
+                                    margin-bottom: 30px;
+                                }
                     }
 
                     img { 
@@ -93,16 +113,29 @@ header {
 
 }
 
+.testiominals {
 
-.testimonials {
+    margin-top: 100px;
+
+    h2 {
+        text-align: left;
+        font-size: 40px;
+        margin-bottom: 75px;
+        margin-top: 20px;
+        margin-left: 75px;
+        color: @block-club-purp;
+    }
+}
+
+.testimonials-flex {
     .display-flex();
     justify-content: space-between;
 
             div {
 
-                border: solid black 1px;
+                
                 margin-top: 20px;
-                width: 20%;
+                width: 30%;
                 height: 500px;
 
 
@@ -110,7 +143,9 @@ header {
 
                     img {
                         width: 100%;
-                        height: 100px;
+                        height: 400px;
+                        margin-bottom: 30px;
+                        border-radius: 25px;
 
                     }
 
