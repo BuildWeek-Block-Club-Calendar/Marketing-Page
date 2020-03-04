@@ -3,3 +3,39 @@
 	justify-content: center;
     flex-direction:row;
   }
+
+  .column() {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+  .reverse() {
+    display:flex;
+    flex-direction:column-reverse;
+    justify-content:center;
+  }
+
+  .wrap() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.design(@background-color; @color; @padding) {
+  background-color: @background-color;
+  color: @color;
+  padding: @padding;
+}
+
+.design2(@radius; @width; @size) {
+  border-radius: @radius;
+  width: @width;
+  font-size: @size;
+}
+
+.animation(@arguments) {
+  -webkit-transform: @arguments;
+  -ms-transform: @arguments;
+   transform : @arguments;
+}
