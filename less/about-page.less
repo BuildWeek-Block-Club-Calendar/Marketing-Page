@@ -1,0 +1,64 @@
+
+   .about {
+    
+    @media @tablet {
+      width: 105%;
+    }
+   
+    .img-content {
+        border-top:@border;
+    }
+    .about-img {
+   
+     display:flex;
+     width: 800px;
+     height: 240px;
+     object-fit: cover;
+     margin-top: 30px;
+
+        }
+    h2 {
+      margin-top: 30px;
+      margin-left: 20px;
+      .center();
+      font-size: 90px;
+      font-family:Oswald;
+      margin-bottom: 30px;
+     
+    }
+    .p-about {
+      margin-top: 30px;
+      font-size:20px;
+     
+      @media @phone {
+       font-size:18px;
+       margin: 20px;
+       line-height: 1.6;
+       text-indent: 10px;
+      
+      }
+    }
+
+    .team {
+      margin-top: 30px;
+      ul {
+        .wrap();
+        li {
+          flex: 0 0 33.333333%;
+          margin-bottom: 30px;
+        
+        }
+      } 
+    
+      img {
+        width:100%;
+      }
+     
+      p {
+        margin-top:20px;
+        text-align:center;
+        line-height:0.2
+      }
+
+   }
+  }

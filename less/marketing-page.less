@@ -1,0 +1,176 @@
+.intro {
+    padding-bottom: 15px;
+  padding-top: 15px;
+  width:100%;
+    display: flex;
+    flex-direction:column;
+    background-color:@background-color;
+    margin:0 auto;
+  h1 {
+    display:flex;
+     align-self: center;
+      position: relative;
+      margin: 0px 15px 15px 0px;
+  }
+  
+    @media @phone {
+      width:105%;
+    }
+    @media @tablet {
+      width:105%;
+    }
+  }
+  
+  .home {
+
+    
+    h2 {
+      font-size: 3.2rem;
+      padding-bottom: 10px;
+      text-align:center;
+    }
+
+    
+    p {
+      line-height: 1.5;
+      font-size: 20px;
+      margin: 50px;
+      text-align: center;
+    }
+    
+  .content-section {
+    margin: 30px 0;
+    .wrap();
+    padding-top: 30px;
+
+
+
+    .text-content {
+      width: 48%;
+      padding-right: 1%;
+      align-self:center;
+      
+    }
+
+    .img-content {
+      width: 48%;
+      padding-left: 1%;
+      img {
+        width: 100%;
+      height: auto;
+      border-radius: 10px;
+      }
+      @media @tablet {
+        margin-right: 15px;
+      }
+    }
+    @media @phone {
+      .reverse();
+      width: 200%;
+      padding: 10px;
+      margin-top:15px;
+     .text-content {
+         align-self:flex-start;
+         margin-top:30px;
+     }
+    }
+  }
+
+  .inverse-content {
+    padding-bottom: 30px;
+   border-top: none;
+
+ 
+    .inverse-text {
+         width: 48%;
+      padding-right: 1%;
+      padding-left: 1%;
+      padding-right: 0;
+    
+   
+    }
+
+    .img-content {
+      padding-right: 1%;
+      padding-left: 0;
+
+      @media @tablet {
+        margin-left: 15px;
+      }
+    
+    }
+    @media @phone {
+      margin-top: -20px;
+       .column();
+      .img-content {
+        padding-left:1%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .content-section2 {
+    margin-top:30px;
+    .wrap();
+    padding-top: 30px;
+    border-top: @border;
+  
+    .text-content2 {
+      width: 48%;
+      padding-right: 1%;
+      margin-top:30px;
+    
+    }
+
+    .img-content {
+      width: 48%;
+      padding-left: 1%;
+
+      img {
+        width: 100%;
+      height: auto;
+      border-radius: 10px;
+      }
+      @media @tablet {
+        @media @tablet {
+          margin-right: 15px;
+        }
+      }
+    }
+    @media @phone {
+      .reverse();
+      border-top:none;
+      width: 200%;
+      padding: 5px;
+      padding-top:30px;
+      margin-left: 20px;
+      margin-top:-80px;
+      .img-content{
+        margin-left:-15px;
+        border-radius:20px;
+      }
+    }
+  }
+
+  .sign {
+    .design(@background-color, @white, 10px);
+    .design2(8px, 40%, 20px);
+    font-family: Oswald;
+    margin-top:45px;
+    margin-left:230px;
+    &:hover {
+      .design(@white, @background-color, 10px);
+      .animation(scale(1.3));                
+    }
+    @media @phone {
+      .design(@background-color, @white, 20px);
+      .design2(8px; 40%; 18px);
+      margin-left:150px;
+      &:hover {
+        .design(@white, @background-color, 20px);
+      }
+        }
+    }
+
+  }
+
+ 
