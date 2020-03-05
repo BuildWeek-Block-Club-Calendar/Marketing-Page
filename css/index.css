@@ -141,11 +141,6 @@ table {
 .main-container img {
   height: fit-content;
 }
-@media (max-width: 768px) {
-  .main-container {
-    background: purple;
-  }
-}
 header {
   display: flex;
   flex-direction: row;
@@ -204,11 +199,21 @@ header img {
   padding: 40px;
   margin-top: 100px;
 }
+@media (max-width: 768px) {
+  .benefits-flex {
+    flex-direction: column;
+  }
+}
 .benefits-flex div {
   margin-top: 20px;
   width: 30%;
   height: 500px;
   padding: 20px;
+}
+@media (max-width: 768px) {
+  .benefits-flex div {
+    width: 100%;
+  }
 }
 .benefits-flex div h3 {
   font-size: 20px;
@@ -249,6 +254,11 @@ footer {
   margin: auto;
   margin-top: 20px;
 }
+@media (max-width: 768px) {
+  .headshot-flex-row {
+    flex-direction: column;
+  }
+}
 .headshot-flex-row div {
   display: flex;
   flex-direction: row;
@@ -257,15 +267,25 @@ footer {
   align-items: center;
   justify-content: center;
   width: 25%;
-  height: 300px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  height: 45%;
+  margin-top: 5%;
+  margin-bottom: 2%;
   color: white;
+}
+@media (max-width: 768px) {
+  .headshot-flex-row div {
+    width: 100%;
+  }
 }
 .headshot-flex-row div img {
   width: 80%;
   height: 300px;
   margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .headshot-flex-row div img {
+    height: 100%;
+  }
 }
 .about-us-header h1 {
   font-family: Oswald;

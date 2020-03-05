@@ -10,6 +10,10 @@
     justify-content: space-between;
     margin: auto; 
     margin-top: 20px;
+
+            @media @phone {
+                flex-direction: column;
+            }
     
 
         div {
@@ -18,16 +22,24 @@
             align-items: center;
             justify-content: center;
             width: 25%;
-            height: 300px;
-            margin-top: 100px;
-            margin-bottom: 100px;
+            height: 45%;
+            margin-top: 5%;
+            margin-bottom: 2%;
             color: white; 
+
+                    @media @phone {
+                        width: 100%;
+                    }
 
 
             img {
                 width: 80%;
                 height: 300px;
                 margin-bottom: 10px;
+
+                        @media @phone {
+                            height: 100%;
+                        }
             }
         
         }
