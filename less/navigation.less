@@ -1,60 +1,76 @@
 
-.nav-container {
 
-    background-color: @block-club-purp;
-    opacity: .95;
-  }
 
 
 nav {
     .display-flex();
-    height: 50px;
-    padding: 20px;
-    align-items: flex-end;
-}
+    align-items: center;
+    background-color: @block-club-purp;
+    opacity: .95;
+    height: 1%;
+    padding: 1%;
+
+                    @media @phone {
+                        flex-direction: column;
+                        justify-content: space-between;
+                        text-align: center;
+                        padding: 0%;
+                        
+                    }
+
+       
 
             a {
                 text-decoration: none;
                 font-family: Oswald; 
                 font-size: 16px;
                 color: white; 
+
+                  @media @phone {
+                        display: block;
+                        font-size: 30px;
+                        padding-top: 10%;
+                        padding-bottom: 10%;
+                        
+                        
+                            
+                  }
             }  
 
 
-            .left-nav{
-                display: flex;
-                justify-content: flex-start;
-                padding-left: 40px;
-                width: 49%;
-                
-            }
             
-                    #logo {
-                        color: white;
-                        text-align: center;
-                        font-family: Oswald;
-                        font-style: normal;
-                        font-weight: bold;
-                        font-size: 34px;
-                        line-height: 50px;
-                    }
+            
+                   
 
-            .right-nav {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px;
-                width: 30%;
-       
-
-                    .button{
-                        .btn-style(10, 10);
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                    }
-    
-
-            }
+            
              
 
-    
+        }
+
+ #button {
+            .btn-style(10, 10);
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+                @media @phone {
+                    display: block;
+                    font-size: 30px;
+                    padding-top: 10%;
+                    padding-bottom: 10%;
+                    background-color: @block-club-purp;
+                    color: white;
+                    border: none; 
+        }  
+        
+ 
+ }
+
+ #logo {
+    color: white;
+    text-align: center;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 50px;
+}
