@@ -197,12 +197,12 @@ header img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 99%;
+  width: 95%;
   margin: auto;
   background-color: #7C4979;
   opacity: 0.95;
   padding: 40px;
-  margin-top: 300px;
+  margin-top: 100px;
 }
 .benefits-flex div {
   margin-top: 20px;
@@ -229,7 +229,7 @@ header img {
   margin-bottom: 30px;
 }
 #videoBG {
-  position: fixed;
+  position: absolute;
   z-index: -1;
   width: 99%;
 }
