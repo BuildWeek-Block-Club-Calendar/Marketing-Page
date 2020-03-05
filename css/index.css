@@ -211,7 +211,7 @@ footer p {
 }
 @media (max-width: 800px) {
   .intro {
-    width: 100%;
+    width: 105%;
   }
 }
 .home h2 {
@@ -375,6 +375,11 @@ footer p {
     padding: 20px;
   }
 }
+@media (max-width: 800px) {
+  .about {
+    width: 105%;
+  }
+}
 .about .img-content {
   border-top: 2px solid silver;
 }
@@ -404,6 +409,26 @@ footer p {
     font-size: 18px;
     margin: 20px;
     line-height: 1.6;
-    text-indent: 20px;
+    text-indent: 10px;
   }
+}
+.about .team {
+  margin-top: 30px;
+}
+.about .team ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about .team ul li {
+  flex: 0 0 33.333333%;
+  margin-bottom: 30px;
+}
+.about .team img {
+  width: 100%;
+}
+.about .team p {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 0.2;
 }
