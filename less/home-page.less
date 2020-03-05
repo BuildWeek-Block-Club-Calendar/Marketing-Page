@@ -1,13 +1,7 @@
 
 .main-container{
     font-family: Oswald; 
-
-        img {
-            height: fit-content;
-        }
-
-        
-
+    
 }
 
 header {
@@ -19,6 +13,12 @@ header {
     margin-top: 20px;
     margin-bottom: 20px;
 
+                @media @phone{
+                    background: #D3D3D3;
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                }
+
             .content-div {
                 display: flex;
                 justify-content: center;
@@ -27,11 +27,20 @@ header {
                 width: 30%;
                 padding: 30px;
 
+                        @media @phone{
+                            padding: 3%;
+                            width: 100%;
+                        }
+
                         h2 {
                             font-size: 50px;
                             margin-bottom: 30px;
                             text-align: center;
                             color: white;
+
+                            @media @phone{
+                                color: @block-club-purp;
+                            }
                         }
 
                         .button {
@@ -39,15 +48,7 @@ header {
                             padding-top: 10px;
                             padding-bottom: 10px;
                         }
-                    }
-
-                    img {
-                        height: 400px;
-                        width: 600px;
-                        margin-left: 50px;
-                
-                    }
-            
+                    }  
 
 }
 
@@ -67,6 +68,7 @@ header {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                margin-top: 0px;
                 }
 
 

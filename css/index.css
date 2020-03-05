@@ -207,9 +207,6 @@ nav a {
 .main-container {
   font-family: Oswald;
 }
-.main-container img {
-  height: fit-content;
-}
 header {
   display: flex;
   flex-direction: row;
@@ -221,6 +218,13 @@ header {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  header {
+    background: #D3D3D3;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
 header .content-div {
   display: flex;
   justify-content: center;
@@ -229,11 +233,22 @@ header .content-div {
   width: 30%;
   padding: 30px;
 }
+@media (max-width: 500px) {
+  header .content-div {
+    padding: 3%;
+    width: 100%;
+  }
+}
 header .content-div h2 {
   font-size: 50px;
   margin-bottom: 30px;
   text-align: center;
   color: white;
+}
+@media (max-width: 500px) {
+  header .content-div h2 {
+    color: #7C4979;
+  }
 }
 header .content-div .button {
   display: flex;
@@ -252,11 +267,6 @@ header .content-div .button {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-header img {
-  height: 400px;
-  width: 600px;
-  margin-left: 50px;
-}
 .benefits-flex {
   display: flex;
   justify-content: space-evenly;
@@ -271,6 +281,7 @@ header img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 0px;
   }
 }
 .benefits-flex div {
@@ -318,16 +329,54 @@ footer {
   padding: 1%;
   color: #7C4979;
 }
+.about-us-header h1 {
+  font-family: Oswald;
+  font-size: 50px;
+  color: white;
+  background: #7C4979;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  opacity: 0.9;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  .about-us-header h1 {
+    background: none;
+    color: #7C4979;
+  }
+}
+#background-image {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid black 1px;
+}
+@media (max-width: 500px) {
+  #background-image {
+    display: none;
+  }
+}
 .main-section {
   background: #7C4979;
+  opacity: 0.98;
+  margin-top: 10%;
+}
+@media (max-width: 500px) {
+  .main-section {
+    margin-top: 0px;
+    opacity: 1;
+  }
 }
 .headshot-flex-row {
-  flex-direction: row;
   display: flex;
   align-items: center;
   background-color: #7C4979;
-  opacity: 0.95;
-  padding: 5%;
+  padding: 1%;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
@@ -336,6 +385,7 @@ footer {
 @media (max-width: 500px) {
   .headshot-flex-row {
     flex-direction: column;
+    margin-top: 0px;
   }
 }
 .headshot-flex-row div {
@@ -365,8 +415,4 @@ footer {
   .headshot-flex-row div img {
     height: 100%;
   }
-}
-.about-us-header h1 {
-  font-family: Oswald;
-  font-size: 50px;
 }
