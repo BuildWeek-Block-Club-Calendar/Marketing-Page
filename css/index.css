@@ -215,8 +215,7 @@ header {
   align-items: center;
   padding-top: 100px;
   padding-bottom: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 5%;
 }
 @media (max-width: 500px) {
   header {
@@ -274,7 +273,7 @@ header .content-div .button {
   background-color: #7C4979;
   opacity: 0.95;
   padding: 5%;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 @media (max-width: 500px) {
   .benefits-flex {
